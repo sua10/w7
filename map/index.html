@@ -18,8 +18,8 @@
   <script>
     function initMap() {
        var myOptions = {
-        zoom: 8,
-        center: {lat: 35.6359322, lng: 139.8786311},
+        zoom: 16,
+        center: {lat: 34.6656995, lng: 135.432666},
         mapTypeId: google.maps.MapTypeId.TERRAIN,
         disableDefaultUI: true,
         // Step 4. Customize displayed controls
@@ -33,14 +33,14 @@
       var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
       var marker = new google.maps.Marker({
-        position: {lat: 35.6359322, lng: 139.8786311},
+        position: {lat: 34.6656995, lng: 135.432666},
         icon: iconBase + 'flag_maps.png',
         map: map
       });
 
       // Step 3. Add info window
 
-      var contentString = '<div id="content"><h2 id="firstHeading" class="firstHeading">Custom info window</h2><p>This is a cool custom info window.</p></div>';
+      var contentString = '<div id="content"><h2 id="firstHeading" class="firstHeading">Custom info window</h2><p>ハリーポッターの映画をこの夏に全話見たので、ストーリーを知った上でもう一度行きたいと思ったため。</p></div>';
 
       var infowindow = new google.maps.InfoWindow({
         content: contentString
